@@ -46,4 +46,5 @@ html {
     transform-origin: 100%; /*Move origin "pivot point" for rotation by 100% along the x-axis*/
     transform: rotate(90deg); /*Hands start at 12*/
     transition: all 0.05s; /*Smooth transitions*/
+    transition-timing-function: cubic-bezier(0.1, 2.5, 0.6, 1); /*Mimics analog clock ticks*/
   }
