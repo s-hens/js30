@@ -19,6 +19,8 @@ html {
     position: fixed;
     bottom: 15px;
     left: 15px;
+    font-size: 10px;
+    line-height: 10px;
   }
 
   .clock {
