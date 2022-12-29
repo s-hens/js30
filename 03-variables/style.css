@@ -15,12 +15,28 @@ input {
     width: 100px;
 }
 
+.link {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+.link img {
+    padding: 0;
+    background: none;
+    filter: none;
+}
+
+/*Declaring variables*/
 :root {
     --base: #FFC600;
     --spacing: 10px;
     --blur: 10px;
 }
 
+/*Using variables*/
 img {
     padding: var(--spacing);
     background: var(--base);
