@@ -19,8 +19,9 @@ html {
     position: fixed;
     bottom: 15px;
     left: 15px;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 0px;
+    line-height: 0px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
   }
 
   .clock {
