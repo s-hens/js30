@@ -17,12 +17,76 @@ const people = [
 
 // Some and Every Checks
 // Array.prototype.some() // is at least one person 19 or older?
+
+const isAdult = people.some(function(person) {
+  const currentYear = (new Date()).getFullYear();
+  if(currentYear - person.year >= 19) {
+    return true;
+  }
+});
+
+console.log(isAdult);
+console.log({isAdult});
+
+/* Other, shorter ways to write this function:
+
+const isAdult = people.some(person => {
+  const currentYear = (new Date()).getFullYear();
+  return currentYear - person.year >= 19;
+});
+
+or
+
+const isAdult = people.some(person => {
+  return ((new Date()).getFullYear()) - person.year >= 19;
+});
+
+or
+
+const isAdult = people.some(person => ((new Date()).getFullYear()) - person.year >= 19);
+*/
+
 // Array.prototype.every() // is everyone 19 or older?
+
+const allAdults = people.every(person => ((new Date()).getFullYear()) - person.year >= 19);
+
+console.log(allAdults);
+console.log({allAdults});
 
 // Array.prototype.find()
 // Find is like filter, but instead returns just the one you are looking for
 // Find the comment with the ID of 823423
 
+const comment = comments.find(function(comment) {
+  if (comment.id === 823423) {
+    return true;
+  }
+});
+
+console.log(comment);
+
+// Rewrite as arrow function with implicit return, which returns boolean of true or false without need for an if statement
+
+const coolerComment = comments.find(comment => comment.id === 823423);
+
+console.log(coolerComment);
+
 // Array.prototype.findIndex()
 // Find the comment with this ID
 // Delete the comment with the ID of 823423
+
+const index = comments.findIndex(comment => comment.id === 823423);
+
+// Build a new array with comment removed
+// Using ... to spread items into new array
+const newComments = [
+  ...comments.slice(0, index),
+  ...comments.slice(index + 1)
+];
+
+console.table(newComments);
+
+/* Or, remove comment from existing array
+
+comments.splice(index, 1)
+*/
