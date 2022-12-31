@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   background: #ffc600;
-  font-family: 'helvetica neue';
+  font-family: 'helvetica neue', sans-serif;
   font-size: 20px;
   font-weight: 200;
 }
@@ -71,4 +71,15 @@ span.population {
 
 .hl {
   background: #ffc600;
+}
+
+.link {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  font-size: 0px;
+  line-height: 0px;
+  /*
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.14));
+  */
 }
