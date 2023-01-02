@@ -2,8 +2,8 @@ window.addEventListener("keydown", playSound);
 
 function playSound(e) {
     //Get audio file and div associated with keydown
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    const audio = document.querySelector(`audio[data-key="${e.key}"]`);
+    const key = document.querySelector(`div[data-key="${e.key}"]`);
     //If there is no audio file associated with the keydown, then stop the function
     if(!audio) return;
     //Stop any audio that is already playing
@@ -35,7 +35,7 @@ window.addEventListener("keyup", stopAnimation);
 
 function stopAnimation(e) {
     //Get div associated with keyup
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${e.key}"]`);
     //If there is no div associated with the keyup, then stop the function
     if (!key) return;
     //If the div associated with the keyup has the class "playing", remove it
