@@ -161,3 +161,14 @@ input[type=range]::-moz-range-thumb {
     background: #ffc600;
     cursor: pointer;
 }
+
+/* Link back to GH */
+
+.link {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-size: 0px;
+    line-height: 0px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.15));
+  }
