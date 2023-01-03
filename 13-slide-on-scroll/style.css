@@ -2,8 +2,9 @@ html {
     box-sizing: border-box;
     background: #ffc600;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 200;
+    letter-spacing: -0.01em;
 }
   
 body {
