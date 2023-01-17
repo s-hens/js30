@@ -1,0 +1,1 @@
+const bands = ["The Strokes", "The Velvet Underground", "Fleetwood Mac", "Arctic Monkeys", "Tame Impala", "The Beatles", "Bauhaus", "The Shins", "Paramore", "The Zombies"];
