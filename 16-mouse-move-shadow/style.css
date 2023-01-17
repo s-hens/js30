@@ -19,3 +19,11 @@ h1 {
     text-shadow: 10px 10px 0 rgba(0,0,0,1);
     font-size: 100px;
 }
+
+.link {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-size: 0px;
+    line-height: 0px;
+}
