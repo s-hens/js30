@@ -28,8 +28,14 @@ body {
 a {
   text-decoration: none;
   color: black;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0,0,0,0.1);
   border-radius: 20px;
+  transition: all 0.2s;
+  padding: 5px;
+}
+
+a:hover {
+  background: none;
 }
 
 .highlight {
@@ -41,8 +47,9 @@ a {
   left: 0;
   z-index: -1;
   border-radius: 20px;
-  display: block;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 5px;
+  display: none;
 }
 
 .menu {
@@ -58,4 +65,21 @@ a {
   padding: 5px;
   margin: 0 20px;
   color: black;
+}
+
+.link {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  font-size: 0px;
+  line-height: 0px;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+}
+
+.link a {
+  background: none;
+}
+
+.link a:hover {
+  background: none;
 }
